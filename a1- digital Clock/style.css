@@ -1,0 +1,97 @@
+body{
+    font-family: monospace;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+   
+}
+#img img {
+    /* background-image: url("./image.jpg"); The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    width: 100%;
+    height: 100vh; /*You must set a specified height*/
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+    background-size:cover; 
+    position: relative;
+  }
+
+#container{
+    width: 60%;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+h1{
+    color: white;
+}
+
+#time{
+    color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+}
+
+#hoursText,#minutesText,#secondsText,#AmPm {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(19, 66, 142);
+    color: aqua;
+    padding: 0;
+    margin: 0   ;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 0 10px 0 ;
+    border-radius: 0 0 5px 5px;
+}
+
+.digits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+.timeDigit{
+    display: flex;
+    width: 100px;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background: rgba(119, 56, 183, 0.884);
+    font-size: 60px;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+#AmPm{
+    background: #347d17;
+    color: white;
+    margin-top: 30px;
+    width: 40px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
